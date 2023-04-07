@@ -38,6 +38,11 @@ import {
       id: "contact",
       title: "Contact",
     },
+    {
+      id: "language",
+      title: "Language",
+      // image: "../assets/logoTach.png"
+    },
   ];
   
   const services = [
