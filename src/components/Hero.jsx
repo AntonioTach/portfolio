@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 
 import { styles } from "../styles";
 import { ComputersCanvas, RazorCanvas } from "./canvas";
+import Contact from "./Contact";
 
 //Change the word every 5 seconds
 const WordChanger = ({ words, initialWord, interval = 5000 }) => {
@@ -65,6 +66,7 @@ const Hero = () => {
           </div>
         </a>
       </div>
+
     </section>
   );
 };

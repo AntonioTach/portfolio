@@ -18,16 +18,15 @@ class Background extends Component {
       stars.push({ x, y, size });
     }
 
-    // ! Shooting stars will cause problems with RAM :(
     // Generate the positions and size of the shooting stars
-    // const shootingStars = [];
-    // for (let i = 0; i < 5; i++) {
-    //   const x = Math.random() * canvas.width;
-    //   const y = Math.random() * canvas.height;
-    //   const size = Math.random() * 3;
-    //   const speed = Math.random() * 5 + 2;
-    //   shootingStars.push({ x, y, size, speed });
-    // }
+    let shootingStars = [];
+    for (let i = 0; i < 2; i++) {
+      const x = Math.random() * canvas.width;
+      const y = Math.random() * canvas.height;
+      const size = Math.random() * 3;
+      const speed = Math.random() * 5 + 2;
+      shootingStars.push({ x, y, size, speed });
+    }
 
     const drawUniverse = () => {
       // Draw the background
@@ -54,28 +53,26 @@ class Background extends Component {
       }
 
       // Put the shooting stars
-    //   for (let i=0; i < shootingStars.length; i++) {
-    //     const star = shootingStars[i];
-    //     star.x -= star.speed;
-    //     ctx.beginPath();
-    //     ctx.arc(star.x, star.y, star.size, 0, Math.PI * 2);
-    //     ctx.fillStyle = 'white';
-    //     ctx.fill();
-    //   }
+      for (let i=0; i < shootingStars.length; i++) {
+        const star = shootingStars[i];
+        star.x -= star.speed;
+        ctx.beginPath();
+        ctx.arc(star.x, star.y, star.size, 0, Math.PI * 2);
+        ctx.fillStyle = 'white';
+        ctx.fill();
+      }
 
-      // Delete the shooting stars that are out of the canvas
-    //   shootingStars.filter(star => star.x > -star.size);
+      // Delete the shooting stars that are out of the canvas and only mantain 2 shooting stars in the canvas.
+      shootingStars = shootingStars.filter(star => star.x > -star.size && shootingStars.length <= 2);
 
-      // Add new shooting Stars in random positions
-    //   if (Math.random() < 0.03) {
-    //     const x = canvas.width + Math.random() * 200;
-    //     const y = Math.random() * canvas.height;
-    //     const size = Math.random() * 3;
-    //     const speed = Math.random() * 5 + 2;
-    //     shootingStars.push({ x, y, size, speed });
-    //   }
-
-      // Repeat the
+      // Add new shooting Stars in random positions only 2 stars at a time
+      if (shootingStars.length < 2 && Math.random() < 0.03) {
+        const x = canvas.width + Math.random() * 200;
+        const y = Math.random() * canvas.height;
+        const size = Math.random() * 3;
+        const speed = Math.random() * 5 + 2;
+        shootingStars.push({ x, y, size, speed });
+      }
       requestAnimationFrame(drawUniverse);
     };
 
