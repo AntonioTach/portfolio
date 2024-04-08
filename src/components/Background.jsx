@@ -53,7 +53,7 @@ class Background extends Component {
       }
 
       // Put the shooting stars
-      for (let i=0; i < shootingStars.length; i++) {
+      for (let i = 0; i < shootingStars.length; i++) {
         const star = shootingStars[i];
         star.x -= star.speed;
         ctx.beginPath();
@@ -74,6 +74,22 @@ class Background extends Component {
         shootingStars.push({ x, y, size, speed });
       }
       requestAnimationFrame(drawUniverse);
+
+      const planetX = canvas.width * 0.11;
+      const planetY = canvas.height * 0.11;
+      const planetRadius = canvas.width * 0.045;
+
+      const planetGradient = ctx.createRadialGradient(planetX, planetY, planetRadius * 0.1, planetX, planetY, planetRadius);
+      planetGradient.addColorStop(0, 'rgba(204, 164, 114, 1)');
+      planetGradient.addColorStop(0.5, 'rgba(181, 129, 90, 0.8)');
+      planetGradient.addColorStop(1, 'rgba(25, 25, 112, 0)');
+
+
+      ctx.fillStyle = planetGradient;
+      ctx.beginPath();
+      ctx.arc(planetX, planetY, planetRadius, 0, Math.PI * 2);
+      ctx.fill();
+
     };
 
     drawUniverse();
