@@ -1,13 +1,9 @@
-import { motion } from "framer-motion"
-import { useState, useRef } from "react"
-import emailjs from "@emailjs/browser"
-
-import { styles } from "../styles"
-import { SectionWrapper } from "../hoc"
-import { slideIn } from "../utils/motion"
+import React from 'react'
 
 const Contact = () => {
-
+  return (
+    <div>Contact</div>
+  )
 }
 
 export default Contact
