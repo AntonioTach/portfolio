@@ -18,8 +18,43 @@ const Contact = () => {
 
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e) => { }
-  const handleSubmit = (e) => { }
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+
+    setForm({ ...form, [name]: value })
+  }
+  const handleSubmit = (e) => { 
+    e.preventDefault()
+    setLoading(true)
+
+    emailjs.send(
+      'service_xe8x2kl', 
+      'template_np8lz8g', 
+      { 
+        from_name : form.name,
+        to_name : 'Antonio Tach',
+        from_email : form.email,
+        to_email : 'antachsoftware@gmail.com',
+        message : form.message,
+      }, 
+      'KBsD5bibLfe1qsF3Z'
+    )
+      .then(() => {
+        setLoading(false)
+        alert('Message sent successfully!')
+        setForm({
+          name: "",
+          email: "",
+          message: "",
+        })
+      })
+      .catch(() => {
+        alert('Failed to send message!')
+      })
+      .finally(() => {
+        setLoading(false)
+      })
+  }
 
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">

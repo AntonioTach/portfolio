@@ -39,8 +39,8 @@ export const navLinks = [
     title: "Contact",
   },
   {
-    id: "language",
-    title: "Language",
+    // id: "language",
+    // title: "Language",
     // image: "../assets/logoTach.png"
   },
 ];

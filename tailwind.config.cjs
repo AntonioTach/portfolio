@@ -17,7 +17,10 @@ module.exports = {
       },
       screens: {
         xs: "450px",
-      }
+      },
+      fontFamily: {
+        shareTechMono: ['"Share Tech Mono"', "monospace"],
+      },
     },
   },
   plugins: [],

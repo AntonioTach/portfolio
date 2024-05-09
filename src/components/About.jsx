@@ -47,14 +47,8 @@ const About = () => {
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'>
-        I am a passionate with a deep love for programming. I thrive
-        on discovering and implementing the most efficient and effective
-        practices in my work, I also enjoy creating a better working
-        environment with my colleagues, I am highly organizated, committed
-        to meeting my goals, and continously strive for self-improvement day
-        by day, My ambition is fueled by a desire to become a lead software
-        developer, where I can guide innovative projects and mentor junior
-        team members.
+        My name is <span className="text-white">Antonio Viña Hernandez</span> but people call me <span className="text-white">Tach</span>. I am a <span className="text-white">FullStack developer</span> specialized in web and mobile technologies, with a lot of passion creating projects with quality and good code, using <span className="text-white">Angular</span> & <span className="text-white">React</span> for front-end, and <span className="text-white">Ionic</span> & <span className="text-white">React Native</span> for mobile. I also worked with back-end, creating APIs in <span className="text-white">Node.js</span>, <span className="text-white">Express</span> & <span className="text-white">NestJS</span>.
+        With a solid track record in the industry, I have held roles in both <span className="text-white">Front-end</span> and <span className="text-white">Back-end development</span> in various companies. I had the privilege of being part of the founding team of a startup, contributing significantly to the acquisition of its first software projects (<span className="text-white">UDigitalBusiness</span>). Additionally, I worked on <span className="text-white">AWS services</span>.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
