@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import cvFile from '../assets/cv.pdf';
+
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
@@ -41,6 +43,12 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
+
+        <a href={cvFile} download="CV_Antonio.pdf">
+            <button className="text-white border-2 border-secondary border-whitecursor-pointer py-2 px-4 transition-all duration-300 ease-in-out rounded-l">
+              Download CV
+            </button>
+        </a>
 
         {/* Show menu in small devices */}
         <div className="sm:hidden flex flex-1 justify-end items-center">

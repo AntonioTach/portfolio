@@ -57,7 +57,7 @@ const Works = () => {
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
           Here are some of the projects I have worked on.
-          Each project has a link to the GitHub repository and a link to the live demo. It reflects my skills and knowledge in web development to solve real-world problems, working with different technologies and tools to make projects more efficient and user-friendly.
+          Each project has a link to the GitHub repository or a link to their webpage. It reflects my skills and knowledge in web development to solve real-world problems, working with different technologies and tools to make projects more efficient and user-friendly.
         </motion.p>
       </div>
 

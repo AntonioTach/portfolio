@@ -10,10 +10,10 @@ const Footer = () => {
         >
           <div className="hover:scale-110 transition-transform">
             <a
-              href="https://www.instagram.com/udigital.business/"
+              href="https://www.linkedin.com/in/antonio-viña-hernández-5b6b611b4"
               className="text-md leading-6 text-white"
             >
-              <FontAwesomeIcon icon={faLinkedin} className="mr-2" />Antonio Viña Hernandez
+              <i className="mr-2" />Antonio Viña Hernandez
             </a>
           </div>
         </a>

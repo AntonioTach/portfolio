@@ -20,11 +20,22 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import angular from "./tech/angular.png";
+import sql from "./tech/sql.png";
+import aws from "./tech/aws.png";
+import csharp from "./tech/csharp.png";
+import nestjs from "./tech/nestjs.svg";
+import mysql from "./tech/mysql.png";
+import astro from "./tech/astro.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import staff from "./company/staff.png";
+import meWithYou from "./company/yo_contigo_it_logo.jpg"
+import udigital from "./company/udb.png";
+
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -55,8 +66,18 @@ export {
   meta,
   shopify,
   starbucks,
+  staff,
+  meWithYou,
   tesla,
   carrent,
   jobit,
   tripguide,
+  angular,
+  sql,
+  aws,
+  csharp,
+  nestjs,
+  mysql,
+  udigital,
+  astro
 };
