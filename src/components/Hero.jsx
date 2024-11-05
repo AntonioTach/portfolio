@@ -36,31 +36,39 @@ const Hero = () => {
           </h1>
 
           <p className={`${styles.heroSubText} mt-2 text-white-100 text-start font-shareTechMono`}>
-          I am a Full Stack Developer that loves to create dynamic solutions. My passion for developing innovative applications drives me to continually learn and apply the latest technologies to solve complex problems. 
+            I am a Full Stack Developer that loves to create dynamic solutions. My passion for developing innovative applications drives me to continually learn and apply the latest technologies to solve complex problems.
           </p>
         </div>
       </div>
 
       <RazorCanvas />
-      
 
-      <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
-        <a href='#about'>
-          <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
-            <motion.div
-              animate={{
-                y: [0, 24, 0],
-              }}
-              transition={{
-                duration: 1.5,
-                repeat: Infinity,
-                repeatType: "loop",
-              }}
-              className='w-3 h-3 rounded-full bg-secondary mb-1'
-            />
-          </div>
-        </a>
-      </div>
+
+      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
+  <a href="#about">
+    <div className="relative w-[35px] h-[64px] flex justify-center items-center">
+      <div className="absolute w-16 h-16 bg-blue-500 opacity-20 rounded-full blur-xl"></div>
+      
+      <motion.div
+        animate={{
+          y: [0, 20, 0],
+        }}
+        transition={{
+          duration: 1.2,
+          repeat: Infinity,
+          ease: "easeInOut",
+        }}
+        className="text-secondary text-2xl transform rotate-90 drop-shadow-lg"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+        </svg>
+      </motion.div>
+    </div>
+  </a>
+</div>
+
+
 
     </section>
   );

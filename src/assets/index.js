@@ -35,6 +35,7 @@ import tesla from "./company/tesla.png";
 import staff from "./company/staff.png";
 import meWithYou from "./company/yo_contigo_it_logo.jpg"
 import udigital from "./company/udb.png";
+import ceti from "./company/ceti.jpg"
 
 
 import carrent from "./carrent.png";
@@ -79,5 +80,6 @@ export {
   nestjs,
   mysql,
   udigital,
-  astro
+  astro,
+  ceti
 };
