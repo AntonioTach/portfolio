@@ -32,7 +32,29 @@ import {
   udigital,
   astro,
   ceti,
+  aswisciv,
+  udb,
+  consultores,
+  neufeld,
+  fisweb,
+  activatee,
+  datacode,
+  crucigrama,
+  maphop,
+  dental,
+  guaycuras,
+  optocenter,
+  museum,
+  jomers,
+  cine,
+  hipotk,
+  financepro,
 } from "../assets";
+
+export const iconEnum = {
+  GITHUB: "GITHUB",
+  LINK: "LINK"
+}
 
 export const navLinks = [
   {
@@ -210,7 +232,7 @@ const experiences = [
       "Committed to continuous learning, staying updated on the latest web and mobile development technologies."
     ],
   },
-  
+
 ];
 
 const testimonials = [
@@ -245,338 +267,599 @@ const projects = [
     name: "ASWISC-IV",
     description:
       "Automated Solution WISC-IV, is a progressive web application that streamlines the WISC-IV test for psychologists while providing additional functionalities for managing their patients, and more.",
-      tags: [
-        {
-          name: "Angular",
-          color: "pink-text-gradient",
-        },
-        {
-          name: "Node.js & Express.js",
-          color: "green-text-gradient",
-        },
-        {
-          name: "tailwind",
-          color: "blue-text-gradient",
-        },
-      ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    tags: [
+      {
+        name: "skill-icons:angular-dark",
+      },
+      {
+        name: "skill-icons:nodejs-dark",
+      },
+      {
+        name: "skill-icons:expressjs-dark",
+      },
+      {
+        name: "skill-icons:mysql-dark",
+      },
+      {
+        name: "skill-icons:mongodb",
+      },
+      {
+        name: "skill-icons:javascript",
+      },
+      {
+        name: "skill-icons:docker",
+      },
+      {
+        name: "skill-icons:aws-dark",
+      }
+    ],
+    image: aswisciv,
+    source_code: [
+      {
+        source_code_link: "https://github.com/AntonioTach/Frontend-ASWISC-IV",
+        icon: iconEnum.GITHUB
+      },
+      {
+        source_code_link: "https://github.com/AntonioTach/server-ASWISC-IV",
+        icon: iconEnum.GITHUB
+      }
+    ],
   },
   {
-    name: "Consultores Occidente",
+    name: "Consultores Occidente CRM",
     description:
-      "Automated Solution WISC-IV, is a progressive web application that streamlines the WISC-IV test for psychologists while providing additional functionalities for managing their patients, and more.",
-      tags: [
-        {
-          name: "Angular",
-          color: "pink-text-gradient",
-        },
-        {
-          name: "Node.js & Express.js",
-          color: "green-text-gradient",
-        },
-        {
-          name: "tailwind",
-          color: "blue-text-gradient",
-        },
-      ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+      "Consultores de Occidente was one of my largest projects, which was a custom CRM that encompassed all the company processes as well as client relationships.",
+    tags: [
+      {
+        name: "skill-icons:angular-dark",
+      },
+      {
+        name: "skill-icons:nestjs-dark",
+      },
+      {
+        name: "skill-icons:prisma",
+      },
+      {
+        name: "skill-icons:mysql-dark",
+      },
+      {
+        name: "skill-icons:mongodb",
+      },
+      {
+        name: "skill-icons:docker",
+      },
+      {
+        name: "skill-icons:aws-dark",
+      },
+      {
+        name: "skill-icons:typescript",
+      }
+    ],
+    image: consultores,
+    source_code: [
+      {
+        source_code_link: "https://consultores-landing-demo.web.app/",
+        icon: iconEnum.LINK
+      }
+    ],
   },
   {
     name: "Finance Pro",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      tags: [
-        {
-          name: "Angular",
-          color: "pink-text-gradient",
-        },
-        {
-          name: "Node.js & Express.js",
-          color: "green-text-gradient",
-        },
-        {
-          name: "tailwind",
-          color: "blue-text-gradient",
-        },
-      ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+      "Finance Pro is a finance management app with modern banking platform. Connecting all your accounts, cards, and bills in one place, it provides a comprehensive overview of your financial health and helps you make informed decisions.",
+    tags: [
+      {
+        name: "skill-icons:react-dark",
+      },
+      {
+        name: "skill-icons:expressjs-dark",
+      },
+      {
+        name: "skill-icons:tailwindcss-dark",
+      },
+      {
+        name: "skill-icons:mongodb",
+      },
+      {
+        name: "skill-icons:typescript",
+      }
+    ],
+    image: financepro,
+    source_code: [
+      {
+        source_code_link: "https://github.com/AntonioTach/finance-pro",
+        icon: iconEnum.GITHUB,
+      },
+    ],
   },
   {
     name: "Neufeld Marketplace & CRM",
     description:
       "This marketplace is seamlessly connected to a CRM. It provides a comprehensive admin panel for managing orders, tracking sales, and overseeing inventory, offering an integrated and efficient experience for both the store's administrators and customers.",
-      tags: [
-        {
-          name: "Angular",
-          color: "pink-text-gradient",
-        },
-        {
-          name: "Node.js & Express.js",
-          color: "green-text-gradient",
-        },
-        {
-          name: "tailwind",
-          color: "blue-text-gradient",
-        },
-      ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    tags: [
+      {
+        name: "skill-icons:laravel-dark",
+      },
+      {
+        name: "skill-icons:azure-dark",
+      },
+      {
+        name: "skill-icons:dotnet",
+      },
+      {
+        name: "skill-icons:mysql-dark",
+      },
+      {
+        name: "skill-icons:mongodb",
+      },
+      {
+        name: "skill-icons:php-dark",
+      }
+    ],
+    image: neufeld,
+    source_code: [
+      {
+        source_code_link: "https://neufeld.com.mx/",
+        icon: iconEnum.LINK,
+      },
+      {
+        source_code_link: "https://portalfacturacionneufeld.azurewebsites.net/",
+        icon: iconEnum.LINK
+      }
+    ],
   },
   {
     name: "Fiscalia Web",
     description:
       "This was the project for the Baja California Prosecutor’s Office that I worked on as a product owner, where we migrated an obsolete system to new technologies and implementations to cover the entire criminal system. Note: The platform cannot be accessed as it is for internal use only.",
-      tags: [
-        {
-          name: "Angular",
-          color: "pink-text-gradient",
-        },
-        {
-          name: "Node.js & Express.js",
-          color: "green-text-gradient",
-        },
-        {
-          name: "tailwind",
-          color: "blue-text-gradient",
-        },
-      ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    tags: [
+      {
+        name: "skill-icons:angular-dark",
+      },
+      {
+        name: "skill-icons:nestjs-dark",
+      },
+      {
+        name: "skill-icons:prisma",
+      },
+      {
+        name: "skill-icons:aws-dark",
+      },
+      {
+        name: "skill-icons:mysql-dark",
+      },
+      {
+        name: "skill-icons:docker",
+      },
+      {
+        name: "skill-icons:mongodb",
+      },
+      {
+        name: "skill-icons:typescript",
+      }
+    ],
+    image: fisweb,
+    source_code: [
+
+    ],
   },
-  {
-    name: "IPH",
-    description:
-      "A comprehensive project that manages the tracking of individual identification, cases, and documents for law enforcement. It provides an extensive platform to streamline and organize case handling, offering efficient document management and case monitoring for improved investigative workflows.",
-      tags: [
-        {
-          name: "Angular",
-          color: "pink-text-gradient",
-        },
-        {
-          name: "Node.js & Express.js",
-          color: "green-text-gradient",
-        },
-        {
-          name: "tailwind",
-          color: "blue-text-gradient",
-        },
-      ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Fiscalia Web",
-    description:
-      "A comprehensive project that manages the tracking of individual identification, cases, and documents for law enforcement. It provides an extensive platform to streamline and organize case handling, offering efficient document management and case monitoring for improved investigative workflows.",
-      tags: [
-        {
-          name: "Angular",
-          color: "pink-text-gradient",
-        },
-        {
-          name: "Node.js & Express.js",
-          color: "green-text-gradient",
-        },
-        {
-          name: "tailwind",
-          color: "blue-text-gradient",
-        },
-      ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
-  },
+  // {
+  //   name: "IPH",
+  //   description:
+  //     "A comprehensive project that manages the tracking of individual identification, cases, and documents for law enforcement. It provides an extensive platform to streamline and organize case handling, offering efficient document management and case monitoring for improved investigative workflows.",
+  //   tags: [
+  //     {
+  //       name: "Angular",
+  //       color: "pink-text-gradient",
+  //     },
+  //     {
+  //       name: "Node.js & Express.js",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "tailwind",
+  //       color: "blue-text-gradient",
+  //     },
+  //   ],
+  //   image: tripguide,
+  //   source_code: [
+  //     {
+  //       source_code_link: "https://github.com/AntonioTach/Frontend-ASWISC-IV",
+  //       icon: iconEnum.GITHUB
+  //     },
+  //     {
+  //       source_code_link: "https://github.com/AntonioTach/server-ASWISC-IV",
+  //       icon: iconEnum.GITHUB
+  //     }
+  //   ],
+  // },
   {
     name: "Activatee Plus",
     description:
       "This mobile app, designed for a church, offers an intuitive platform for accessing Bible information. It provides easy navigation, allowing users to explore scriptures and gain insights seamlessly, making it an essential resource for church members seeking spiritual growth and understanding.",
-      tags: [
-        {
-          name: "Angular",
-          color: "pink-text-gradient",
-        },
-        {
-          name: "Node.js & Express.js",
-          color: "green-text-gradient",
-        },
-        {
-          name: "tailwind",
-          color: "blue-text-gradient",
-        },
-      ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    tags: [
+      {
+        name: "skill-icons:react-dark",
+      },
+      {
+        name: "skill-icons:androidstudio-dark",
+      },
+      {
+        name: "skill-icons:mongodb"
+      },
+      {
+        name: "skill-icons:javascript",
+      }
+    ],
+    image: activatee,
+    source_code: [
+      {
+        source_code_link: "https://play.google.com/store/apps/details?id=com.activateeplus&hl=es_MX",
+        icon: iconEnum.LINK
+      },
+      {
+        source_code_link: "https://apps.apple.com/mx/app/activatee-plus/id6449203156?l=en-GB",
+        icon: iconEnum.LINK
+      }
+    ],
   },
   {
     name: "Guaycuras Travel",
     description:
       "This custom CRM, created for a travel agency called Guaycuras Travel, streamlines the management of flights, trips, clients, and prospects. Tailored to the agency's specific needs, it offers an intuitive platform to oversee bookings, track customer journeys, and nurture prospects, delivering a comprehensive solution to enhance client satisfaction and operational efficiency.",
-      tags: [
-        {
-          name: "Angular",
-          color: "pink-text-gradient",
-        },
-        {
-          name: "Node.js & Express.js",
-          color: "green-text-gradient",
-        },
-        {
-          name: "tailwind",
-          color: "blue-text-gradient",
-        },
-      ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    tags: [
+      {
+        name: "skill-icons:angular-dark",
+      },
+      {
+        name: "skill-icons:nestjs-dark",
+      },
+      {
+        name: "skill-icons:prisma",
+      },
+      {
+        name: "skill-icons:mysql-dark",
+      },
+      {
+        name: "skill-icons:mongodb",
+      },
+      {
+        name: "skill-icons:docker",
+      },
+      {
+        name: "skill-icons:aws-dark",
+      },
+      {
+        name: "skill-icons:typescript",
+      },
+      {
+        name: "skill-icons:figma-dark",
+      },
+      {
+        name: "skill-icons:tailwindcss-dark",
+      }
+    ],
+    image: guaycuras,
+    source_code: [
+
+    ],
+  },
+  {
+    name: "Hipotk",
+    description:
+      "A web and mobile application for mortgage sales for Hir Casa, a real estate company, which also includes a calculator to determine credit capacity through with a friendly chat.",
+    tags: [
+      {
+        name: "skill-icons:angular-dark",
+      },
+      {
+        name: "skill-icons:nodejs-dark",
+      },
+      {
+        name: "skill-icons:mysql-dark",
+      },
+      {
+        name: "skill-icons:mongodb",
+      },
+      {
+        name: "skill-icons:docker",
+      },
+      {
+        name: "skill-icons:aws-dark",
+      },
+      {
+        name: "skill-icons:typescript",
+      },
+    ],
+    image: hipotk,
+    source_code: [
+      {
+        source_code_link: "https://www.hipotk.com/",
+        icon: iconEnum.LINK
+      }
+    ],
   },
   {
     name: "UDigital Business",
     description:
       "The Udigital Business landing page provides a clear and engaging overview of the company's services, emphasizing its digital expertise. With a modern design, it showcases the firm's innovative solutions and success stories, creating a compelling first impression that helps visitors understand Udigital Business's value proposition and unique offerings.",
-      tags: [
-        {
-          name: "Angular",
-          color: "pink-text-gradient",
-        },
-        {
-          name: "Node.js & Express.js",
-          color: "green-text-gradient",
-        },
-        {
-          name: "tailwind",
-          color: "blue-text-gradient",
-        },
-      ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    tags: [
+      {
+        name: "skill-icons:astro",
+      },
+      {
+        name: "skill-icons:tailwindcss-dark",
+      },
+      {
+        name: "skill-icons:figma-dark",
+      }
+    ],
+    image: udb,
+    source_code: [
+      {
+        source_code_link: "https://udigitalbusiness.com/",
+        icon: iconEnum.LINK
+      },
+    ],
   },
   {
     name: "Datacode",
     description:
-      "The Udigital Business landing page provides a clear and engaging overview of the company's services, emphasizing its digital expertise. With a modern design, it showcases the firm's innovative solutions and success stories, creating a compelling first impression that helps visitors understand Udigital Business's value proposition and unique offerings.",
-      tags: [
-        {
-          name: "Angular",
-          color: "pink-text-gradient",
-        },
-        {
-          name: "Node.js & Express.js",
-          color: "green-text-gradient",
-        },
-        {
-          name: "tailwind",
-          color: "blue-text-gradient",
-        },
-      ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+      "Datacode is a beautiful landing page for a Enterprise used the best technologies to make it more efficient and user-friendly.",
+    tags: [
+      {
+        name: "skill-icons:astro",
+      },
+      {
+        name: "skill-icons:tailwindcss-dark",
+      },
+      {
+        name: "skill-icons:figma-dark",
+      },
+    ],
+    image: datacode,
+    source_code: [
+      {
+        source_code_link: "https://datacodemex.com/",
+        icon: iconEnum.LINK
+      },
+    ],
+  },
+  {
+    name: "Map Hop",
+    description:
+      "MapHop is a system dedicated to connect citizenship with a better way of living in your city, creating reports of certain problems that affect every person into Guadalajara, ease the process for the institutions responsible for solving the problem.",
+    tags: [
+      {
+        name: "skill-icons:angular-dark",
+      },
+      {
+        name: "skill-icons:nodejs-dark",
+      },
+      {
+        name: "skill-icons:expressjs-dark",
+      },
+      {
+        name: "skill-icons:mongodb",
+      },
+      {
+        name: "skill-icons:mysql-dark",
+      },
+      {
+        name: "skill-icons:docker",
+      },
+      {
+        name: "skill-icons:javascript",
+      },
+    ],
+    image: maphop,
+    source_code: [
+      {
+        source_code_link: "https://pwa-maphop.web.app/",
+        icon: iconEnum.LINK
+      },
+    ],
   },
   {
     name: "Crucigrama Deportivo",
     description:
-      "The Udigital Business landing page provides a clear and engaging overview of the company's services, emphasizing its digital expertise. With a modern design, it showcases the firm's innovative solutions and success stories, creating a compelling first impression that helps visitors understand Udigital Business's value proposition and unique offerings.",
-      tags: [
-        {
-          name: "Angular",
-          color: "pink-text-gradient",
-        },
-        {
-          name: "Node.js & Express.js",
-          color: "green-text-gradient",
-        },
-        {
-          name: "tailwind",
-          color: "blue-text-gradient",
-        },
-      ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+      "A client who is a sports commentator hired me to create a sports-themed crossword app with real rewards for users. The app will include crosswords on teams, players, and sports moments, along with a system for players to earn prizes by completing puzzles.",
+    tags: [
+      {
+        name: "skill-icons:angular-dark",
+      },
+      {
+        name: "skill-icons:nestjs-dark",
+      },
+      {
+        name: "skill-icons:aws-dark",
+      },
+      {
+        name: "skill-icons:mongodb",
+      },
+      {
+        name: "skill-icons:postgresql-dark",
+      },
+      {
+        name: "skill-icons:docker",
+      },
+      {
+        name: "skill-icons:typescript",
+      },
+      {
+        name: "skill-icons:figma-dark",
+      },
+      {
+        name: "skill-icons:astro"
+      },
+      {
+        name: "skill-icons:tailwindcss-dark"
+      },
+      {
+
+      }
+
+    ],
+    image: crucigrama,
+    source_code: [
+      {
+        source_code_link: "https://crucigramadeportivo.app/",
+        icon: iconEnum.LINK
+      },
+      {
+        source_code_link: "https://crucigramadeportivo.site/",
+        icon: iconEnum.LINK
+      }
+    ],
   },
   {
     name: "Dental Integralia",
     description:
-      "The Udigital Business landing page provides a clear and engaging overview of the company's services, emphasizing its digital expertise. With a modern design, it showcases the firm's innovative solutions and success stories, creating a compelling first impression that helps visitors understand Udigital Business's value proposition and unique offerings.",
-      tags: [
-        {
-          name: "Angular",
-          color: "pink-text-gradient",
-        },
-        {
-          name: "Node.js & Express.js",
-          color: "green-text-gradient",
-        },
-        {
-          name: "tailwind",
-          color: "blue-text-gradient",
-        },
-      ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+      "A dental office wanted to become better known in the digital world, so a design and website were created that captured the essence of their brand.",
+    tags: [
+      {
+        name: "skill-icons:astro",
+      },
+      {
+        name: "skill-icons:tailwindcss-dark",
+      },
+      {
+        name: "skill-icons:figma-dark",
+      },
+      {
+        name: "skill-icons:sass"
+      }
+    ],
+    image: dental,
+    source_code: [
+      {
+        source_code_link: "https://consultorio-dental-integral.web.app/",
+        icon: iconEnum.LINK
+      },
+    ],
   },
   {
     name: "Optocenter",
     description:
-      "The Udigital Business landing page provides a clear and engaging overview of the company's services, emphasizing its digital expertise. With a modern design, it showcases the firm's innovative solutions and success stories, creating a compelling first impression that helps visitors understand Udigital Business's value proposition and unique offerings.",
-      tags: [
-        {
-          name: "Angular",
-          color: "pink-text-gradient",
-        },
-        {
-          name: "Node.js & Express.js",
-          color: "green-text-gradient",
-        },
-        {
-          name: "tailwind",
-          color: "blue-text-gradient",
-        },
-      ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+      "An optical office wanted to become better known in the digital world, so a design and website were created that captured the essence of their brand.",
+    tags: [
+      {
+        name: "skill-icons:astro",
+      },
+      {
+        name: "skill-icons:tailwindcss-dark",
+      },
+      {
+        name: "skill-icons:figma-dark",
+      },
+      {
+        name: "skill-icons:sass"
+      }
+    ],
+    image: optocenter,
+    source_code: [
+      {
+        source_code_link: "https://www.optocenter.com.mx/",
+        icon: iconEnum.LINK
+      },
+    ],
   },
   {
-    name: "Marketplace Jamers",
+    name: "Torture Museum",
     description:
-      "The Udigital Business landing page provides a clear and engaging overview of the company's services, emphasizing its digital expertise. With a modern design, it showcases the firm's innovative solutions and success stories, creating a compelling first impression that helps visitors understand Udigital Business's value proposition and unique offerings.",
-      tags: [
-        {
-          name: "Angular",
-          color: "pink-text-gradient",
-        },
-        {
-          name: "Node.js & Express.js",
-          color: "green-text-gradient",
-        },
-        {
-          name: "tailwind",
-          color: "blue-text-gradient",
-        },
-      ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+      "An Torture museum wanted to increase its digital presence, so a website was created that captures the immersive, atmospheric experience of the exhibits, inviting users to explore its unique collections online.",
+    tags: [
+      {
+        name: "skill-icons:astro",
+      },
+      {
+        name: "skill-icons:tailwindcss-dark",
+      },
+      {
+        name: "skill-icons:figma-dark",
+      },
+      {
+        name: "skill-icons:sass"
+      }
+    ],
+    image: museum,
+    source_code: [
+      {
+        source_code_link: "https://museodelatortura.com.mx/",
+        icon: iconEnum.LINK
+      },
+    ],
   },
   {
-    name: "Cine Lago",
+    name: "Marketplace & CRM Jomers",
     description:
-      "The Udigital Business landing page provides a clear and engaging overview of the company's services, emphasizing its digital expertise. With a modern design, it showcases the firm's innovative solutions and success stories, creating a compelling first impression that helps visitors understand Udigital Business's value proposition and unique offerings.",
+      "Jomers, clothing store, wants a CRM and Marketplace to enhance customer experience. The CRM enables personalized interactions, while the Marketplace provides a user-friendly platform for browsing collections and making quick, tailored purchases.",
       tags: [
         {
-          name: "Angular",
-          color: "pink-text-gradient",
+          name: "skill-icons:angular-dark",
         },
         {
-          name: "Node.js & Express.js",
-          color: "green-text-gradient",
+          name: "skill-icons:nestjs-dark",
         },
         {
-          name: "tailwind",
-          color: "blue-text-gradient",
+          name: "skill-icons:prisma",
         },
+        {
+          name: "skill-icons:mysql-dark",
+        },
+        {
+          name: "skill-icons:mongodb",
+        },
+        {
+          name: "skill-icons:docker",
+        },
+        {
+          name: "skill-icons:aws-dark",
+        },
+        {
+          name: "skill-icons:typescript",
+        }
       ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: jomers,
+    source_code: [
+    ],
+  },
+  {
+    name: "Cinema Lago",
+    description:
+      "I developed a system for a cinema that includes a ticketing marketplace and a CRM. The marketplace lets users easily browse showtimes and purchase tickets, while the CRM manages personalized communication, sending offers and recommendations based on movie preferences and purchase history.",
+      tags: [
+        {
+          name: "skill-icons:angular-dark",
+        },
+        {
+          name: "skill-icons:nestjs-dark",
+        },
+        {
+          name: "skill-icons:prisma",
+        },
+        {
+          name: "skill-icons:mysql-dark",
+        },
+        {
+          name: "skill-icons:mongodb",
+        },
+        {
+          name: "skill-icons:docker",
+        },
+        {
+          name: "skill-icons:aws-dark",
+        },
+        {
+          name: "skill-icons:typescript",
+        }
+      ],
+    image: cine,
+    source_code: [
+    ],
   },
 ];
+
+
 
 export { services, technologies, experiences, testimonials, projects };

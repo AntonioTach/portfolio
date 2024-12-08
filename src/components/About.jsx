@@ -9,32 +9,50 @@ import { fadeIn, textVariant } from '../utils/motion'
 import { SectionWrapper } from '../hoc'
 
 const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className='xs:w-[250px] w-full'>
+  <Tilt
+    className="w-full sm:w-[280px] transform transition-transform hover:scale-110"
+    options={{
+      max: 35,
+      scale: 1.1,
+      speed: 500,
+    }}
+  >
     <motion.div
-      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
+      variants={{
+        hidden: { opacity: 0, y: 50 },
+        visible: { opacity: 1, y: 0 },
+      }}
+      initial="hidden"
+      animate="visible"
+      transition={{
+        delay: index * 0.3,
+        type: "spring",
+        stiffness: 70,
+        damping: 15,
+      }}
+      className="relative bg-gradient-to-r from-purple-700 to-indigo-900 p-[3px] rounded-3xl shadow-2xl"
     >
-      <div
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
-      >
-        <img
-          src={icon}
-          alt='web-development'
-          className='w-16 h-16 object-contain'
-        />
-
-        <h3 className='text-white text-[20px] font-bold text-center'>
+      {/* Outer glowing effect */}
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-purple-500 opacity-30 blur-xl rounded-3xl"></div>
+      
+      <div className="relative bg-gray-900 rounded-3xl p-6 flex flex-col items-center justify-center h-[300px]">
+        <div className="relative">
+          <img
+            src={icon}
+            alt={`${title}-icon`}
+            className="w-20 h-20 object-contain"
+          />
+          {/* Pulsating ring effect */}
+          <div className="absolute inset-0 w-full h-full rounded-full border-[3px] border-dashed border-indigo-400 opacity-50 animate-pulse"></div>
+        </div>
+        <h3 className="text-white text-xl font-bold text-center mt-4 tracking-wide">
           {title}
         </h3>
       </div>
     </motion.div>
   </Tilt>
 );
+
 
 const About = () => {
   return (
