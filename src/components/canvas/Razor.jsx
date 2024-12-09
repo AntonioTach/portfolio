@@ -66,6 +66,13 @@ const ComputersCanvas = () => {
       gl={{ preserveDrawingBuffer: true }}
       style={{ position: "absolute", top: "170px", right: "50px" }}
     >
+      <ambientLight intensity={0.3} />
+      <directionalLight
+        position={[10, 10, 5]}
+        intensity={3}
+        castShadow
+      />
+
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           enableZoom={false}

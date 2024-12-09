@@ -6,6 +6,7 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import externalLink from "./external-link.png"
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -35,11 +36,31 @@ import tesla from "./company/tesla.png";
 import staff from "./company/staff.png";
 import meWithYou from "./company/yo_contigo_it_logo.jpg"
 import udigital from "./company/udb.png";
+import ceti from "./company/ceti.jpg"
 
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+
+// PROJECTS
+import udb from "./projects/UDB.png"
+import aswisciv from "./projects/ASWISC-IV.png"
+import consultores from "./projects/consultores.png"
+import neufeld from "./projects/neufeld.jpg"
+import fisweb from "./projects/fisweb.png"
+import activatee from "./projects/activatee.png"
+import datacode from "./projects/datacode.png"
+import crucigrama from "./projects/crucigrama.png"
+import maphop from "./projects/maphop.png"
+import dental from "./projects/dental.png"
+import guaycuras from "./projects/guaycuras.png"
+import optocenter from "./projects/optocenter.png"
+import museum from "./projects/museum.png"
+import jomers from "./projects/jomers.png"
+import cine from "./projects/cine.png"
+import hipotk from "./projects/hipotk.png"
+import financepro from "./projects/financepro.jpg"
 
 export {
   logo,
@@ -79,5 +100,24 @@ export {
   nestjs,
   mysql,
   udigital,
-  astro
+  astro,
+  ceti,
+  aswisciv,
+  externalLink,
+  udb,
+  consultores,
+  neufeld,
+  fisweb,
+  activatee,
+  datacode,
+  crucigrama,
+  maphop,
+  dental,
+  guaycuras,
+  optocenter,
+  museum,
+  jomers,
+  cine,
+  hipotk,
+  financepro,
 };

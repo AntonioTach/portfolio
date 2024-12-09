@@ -2,14 +2,17 @@ import Tilt from 'react-tilt'
 import { motion } from 'framer-motion'
 import { styles } from '../styles'
 import { github } from '../assets'
+import { externalLink } from '../assets'
 import { SectionWrapper } from '../hoc'
-import { projects } from '../constants'
+import { iconEnum, projects } from '../constants'
 import { fadeIn, textVariant } from '../utils/motion'
+import { Icon } from '@iconify/react';
 
 const ProjectCard = ({ index, name, description, tags, image, source_code }) => {
   return (
     <motion.div
       variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+        {/* REFRESH COMENTING TILT IF DOESNT SHOW */}
       <Tilt
         options={{ max: 45, scale: 1, speed: 450 }}
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
@@ -18,10 +21,16 @@ const ProjectCard = ({ index, name, description, tags, image, source_code }) => 
           <img src={image} alt={name} className='w-full h-full object-cover rounded-2xl' />
 
           <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
-            <div onClick={() => window.open(source_code, "_blank")}
-              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer' >
-              <img src={github} alt='github' className='w-1/2 h-1/2 object-contain' />
-            </div>
+            {source_code.map((source) => (
+              <div onClick={() => window.open(source.source_code_link, "_blank")}
+                className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer mr-1' >
+                <img
+                  src={source.icon == iconEnum.GITHUB ? github : externalLink}
+                  alt={source.icon == iconEnum.GITHUB ? "github" : "external link"}
+                  className='w-1/2 h-1/2 object-contain'
+                />
+              </div>
+            ))}
           </div>
         </div>
 
@@ -32,10 +41,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code }) => 
 
         <div className='mt-4 flex flex-wrap gap-2'>
           {tags.map((tag) => (
-            <p key={tag.name}
-              className={`text-[14px] ${tag.color}`}>
-              #{tag.name}
-            </p>
+            <Icon icon={tag.name} width="40" height="40" className="transition-transform duration-200 hover:scale-110" />
           ))}
         </div>
       </Tilt>
@@ -72,4 +78,4 @@ const Works = () => {
   )
 }
 
-export default SectionWrapper(Works, '')
+export default SectionWrapper(Works, 'projects')
