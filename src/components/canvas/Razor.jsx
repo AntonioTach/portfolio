@@ -16,7 +16,8 @@ const Computers = ({ isMobile }) => {
         penumbra={1}
         intensity={1}
         castShadow
-        shadow-mapSize={1024}
+        shadow-mapSize-width={512}
+        shadow-mapSize-height={512}
       />
       <pointLight intensity={1} />
       <primitive
@@ -60,10 +61,9 @@ const ComputersCanvas = () => {
   return (
     <Canvas
       frameloop='demand'
-      shadows
+      shadows={false}
       dpr={[1, 2]}
       camera={{ position: [20, 3, 5], fov: 25 }}
-      gl={{ preserveDrawingBuffer: true }}
       style={{ position: "absolute", top: "170px", right: "50px" }}
     >
       <ambientLight intensity={0.3} />
