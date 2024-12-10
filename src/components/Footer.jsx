@@ -10,6 +10,7 @@ const Footer = () => {
         >
           <div className="hover:scale-110 transition-transform">
             <a
+              target="_blank"
               href="https://www.linkedin.com/in/antonio-viña-hernández-5b6b611b4"
               className="text-md leading-6 text-white"
             >
@@ -22,12 +23,12 @@ const Footer = () => {
           <div className="sm:grid sm:grid-cols-1 sm:gap-8">
             <div className="flex justify-evenly">
               <div className="hover:scale-110 transition-transform">
-                <a
+                {/* <a
                   href="https://udigitalbusiness.com/"
                   className="text-md leading-6 text-white"
                 >
                   <i className="fab fa-instagram mr-2"></i>Udigital Business
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
