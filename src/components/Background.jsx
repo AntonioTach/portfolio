@@ -2,8 +2,13 @@ import React, { Component } from 'react';
 
 // Background Universe
 class Background extends Component {
+  constructor(props) {
+    super(props);
+    this.canvasRef = React.createRef();
+  }
+
   componentDidMount() {
-    const canvas = this.refs.canvas;
+    const canvas = this.canvasRef.current;
     const ctx = canvas.getContext('2d');
 
     canvas.width = window.innerWidth;
@@ -96,7 +101,7 @@ class Background extends Component {
   }
 
   render() {
-    return <canvas ref="canvas" style={{ position: 'fixed' }} />;
+    return <canvas ref={this.canvasRef}  style={{ position: 'fixed' }} />;
   }
 }
 

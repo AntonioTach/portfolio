@@ -23,7 +23,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code }) => 
   
             <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
               {source_code.map((source) => (
-                <div onClick={() => window.open(source.source_code_link, "_blank")}
+                <div key={`${source.source_code_link}`} onClick={() => window.open(source.source_code_link, "_blank")}
                   className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer mr-1' >
                   <img
                     src={source.icon == iconEnum.GITHUB ? github : externalLink}
@@ -42,7 +42,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code }) => 
   
           <div className='mt-4 flex flex-wrap gap-2'>
             {tags.map((tag) => (
-              <Icon icon={tag.name} width="40" height="40" className="transition-transform duration-200 hover:scale-110" />
+              <Icon key={`tag-${tag.name}-${index}`} icon={tag.name} width="40" height="40" className="transition-transform duration-200 hover:scale-110" />
             ))}
           </div>
         </Tilt>
